@@ -1,11 +1,6 @@
 # LearnMate-AI
 LearnMate AI is a local Retrieval-Augmented Generation (RAG) system designed to help students interact intelligently with PDF documents.
 
-# LearnMate AI 
-
-LearnMate AI is a local Retrieval-Augmented Generation (RAG) system designed to help students interact intelligently with PDF documents.
-
-
 ## LearnMate AI Modules:
 
 1. Document Processing Module
