@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+data/raw_pdfs/
+data/chunks/
+vector_db/
+models/
