@@ -24,19 +24,19 @@ class LLMManager:
 
         # On renforce la consigne de fidélité dans le System Prompt
         full_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
-Tu es une IA pédagogique rigoureuse. 
-CONSIGNE CRITIQUE : Réponds en utilisant UNIQUEMENT les informations du contexte fourni. 
-Si une information n'est pas dans le contexte, dis que tu ne sais pas. 
-Ne fais pas d'analogies inutiles.
-Niveau de réponse : {level}
-Instruction : {prompt_instruction}<|eot_id|>
-<|start_header_id|>user<|end_header_id|>
-CONTEXTE :
-{context}
+        Tu es une IA pédagogique rigoureuse. 
+        CONSIGNE CRITIQUE : Réponds en utilisant UNIQUEMENT les informations du contexte fourni. 
+        Si une information n'est pas dans le contexte, dis que tu ne sais pas. 
+        Ne fais pas d'analogies inutiles.
+        Niveau de réponse : {level}
+        Instruction : {prompt_instruction}<|eot_id|>
+        <|start_header_id|>user<|end_header_id|>
+        CONTEXTE :
+        {context}
 
-QUESTION :
-{question}<|eot_id|>
-<|start_header_id|>assistant<|end_header_id|>"""
+        QUESTION :
+        {question}<|eot_id|>
+        <|start_header_id|>assistant<|end_header_id|>"""
 
         output = self.llm(
             full_prompt,
