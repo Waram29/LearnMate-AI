@@ -40,8 +40,8 @@ QUESTION :
 
         output = self.llm(
             full_prompt,
-            max_tokens=256,  # Limite la longueur de la réponse pour éviter les digressions
-            temperature=0.1,  # RÉGLAGE CLÉ : Presque aucune créativité pour éviter les hallucinations
+            max_tokens=512,  # Limite la longueur de la réponse pour éviter les digressions
+            temperature=0.2,  # RÉGLAGE CLÉ : Presque aucune créativité pour éviter les hallucinations
             top_p=0.9,
             repeat_penalty=1.2,
             stop=["<|eot_id|>"],
