@@ -34,7 +34,7 @@ results = collection.query(
 context = "\n".join(results["documents"][0])
 
 # Mode pédagogique
-mode = "Analogy"
+mode = "Analogy"  # Choisissez parmi "Exam", "Beginner", "Detailed", "Step-by-Step", "Analogy"
 
 prompt = get_prompt(mode, context, question)
 
@@ -43,5 +43,7 @@ llm = LocalLLM("models/mistral-7b-instruct-v0.2.Q4_K_M.gguf")
 
 response = llm.generate(prompt)
 
-print("\n===== RÉPONSE IA =====\n")
+print("\n===== QUESTION =====\n")
+print(question)
+print("\n===== RÉPONSE en mode : ", mode, "=====\n")
 print(response)
