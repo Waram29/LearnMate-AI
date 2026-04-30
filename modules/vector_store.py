@@ -11,8 +11,7 @@ class VectorStore:
         if not os.path.exists(self.db_path):
             os.makedirs(self.db_path)
             print(f"Le répertoire {self.db_path} a été créé.")
-
-        # Initialisation du client persistant
+            
         self.client = chromadb.PersistentClient(path=self.db_path)
 
         # Création ou récupération de la collection

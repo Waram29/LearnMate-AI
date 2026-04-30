@@ -15,8 +15,8 @@ def test():
     
     llm = LLMManager()
     
-    print("\n--- TEST EN COURS (Niveau intermédiaire) ---")
-    reponse = llm.generate_response(question_test, contexte_test, level="intermédiaire")
+    print("\n--- TEST EN COURS (Niveau débutant) ---")
+    reponse = llm.generate_response(question_test, contexte_test, level="débutant")
     print(f"RÉPONSE : {reponse}")
 
 if __name__ == "__main__":
